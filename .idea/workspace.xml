@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86ba0f25-ce51-4dbd-b655-7a6c8b4f35d5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+    <option name="namespace" value="default" />
+  </component>
+  <component name="ProjectId" id="1ia0S1DAWkCQcV1SK5BLKdp71vP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Henry\Desktop\JWE" />
+      <recent name="C:\Users\Henry\Desktop\JWE\Perl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.PHP">
+    <configuration name="PHP" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="php-jwt" />
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="php-jwt" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Perl" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="perl-jwt" />
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="perl-jwt" />
+          <option name="entrypoint" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Perl/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Perl" />
+      <item itemvalue="Docker.PHP" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.PHP" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86ba0f25-ce51-4dbd-b655-7a6c8b4f35d5" name="Default Changelist" comment="" />
+      <created>1602130391739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602130391739</updated>
+      <workItem from="1602130392941" duration="6446000" />
+      <workItem from="1602137337338" duration="3599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="309" y="115" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602131384180">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="309" y="115" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.816/0.0.1707.920@0.0.1707.920" timestamp="1602131384180" />
+    <state x="607" y="258" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602133986477">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="607" y="258" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.816/0.0.1707.920@0.0.1707.920" timestamp="1602133986477" />
+    <state x="355" y="105" key="SettingsEditor" timestamp="1602134035461">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="355" y="105" key="SettingsEditor/-1920.0.1536.816/0.0.1707.920@0.0.1707.920" timestamp="1602134035461" />
+  </component>
+</project>

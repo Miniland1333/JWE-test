@@ -1,0 +1,5 @@
+mike's token eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0.uk1BOZP3pQ1jrez6aq6jCeyOqpBkS4a5eErXyd7pWZ0YTUHW2i7XctTXEIeUfQ6y0x5SV4NvdWJ9rOg-1lUT0XFuMhXJ8f8Q.mIM3qvUZZ_b1yiICEMNz1w.xOP1LsZJ4Tc-pkv4kKM1BiuFsHEa5WhcQEOSwdQDsLCSqko0y-XbOvJbUZLvo55kojlvM0SSYw2z5z4ioD-j6OnUhjhQyStzeSo2c0Mofu0.Gtff5mq8muyVP-xfMyH97dcZyStAxbFy2hxAIAyKbWs
+Mikescompressedtoken  eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiYWxnIjoiQTI1NktXIn0.YrhpN6nwCPUUpmPfJOPuwCoXbH9GNPQfsfk-mG3JbmBZOVux1q7G5fHZQl-6Ql1gsIxIZpCVgTUAfiSyekOcQhvV3v1zwD1Z.EEqAedNYNlmmukFF1VEtRg.hPz-NqSdZ9MXUk9WietptXQGgeOBUCOlZ9JMmUkZURfDZFqOT2Qoiy62ae5_8jBXtfuf0HujfVKsq3okDoCuqw.UUrr9u5oje3nr2dPXgMSF56adeqpZ90LMfYFhriIulI     
+mikes payload  Now is the time for all good men to come to the aid of your country
+mikes compressed payload Now is the time for all good men to come to the aid of your country
+aes_key_unwrap: unexpected data [AES/8a8cada54c4f0efd] at /Library/Perl/5.18/Crypt/JWT.pm line 355.

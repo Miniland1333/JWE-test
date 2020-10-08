@@ -1,0 +1,35 @@
+use Crypt::JWT qw(decode_jwt encode_jwt);
+use 5.10.0;
+use strict;
+
+my $ericsKey = "itsgs9h6RUXQLkNjHMb2CCcJ32cu1CyQ";
+my $ericsToken = "eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiemlwIjoiREVGIn0.-Qr8RoSaPUo93xvHa1cYqNoTDAIeOZiDMOMXz7Rf66vRDz0OOTwXcdx586TmeYVpIqRLreyCv8YrwvJ5LvSa6apnC5lcsLZY.fp-22qSCk21RaV3ost7gXw.GmED7RpqLuIRAbEhj1WvG7V8_CgOGzwO9g7JdaLMKLTqQ52R_YMLb3xiY47BX0jBgacP3oglPRTfFsfkGkSVow.dqEli5z-PpGTNgsoQYsL3aCSviHlQPTMnw5D8LMTwg4";
+
+my $string = "Now is the time for all good men to come to the aid of your country";
+my $content_alg = "A256CBC-HS512";
+my $signing_alg = "A256KW";
+
+
+my $Mikestoken  = encode_jwt(payload=>$string, key=>$ericsKey, 
+                              enc=>$content_alg, alg=>$signing_alg                
+                );
+my $Mikescompressedtoken = encode_jwt(payload=>$string, key=>$ericsKey, 
+                              enc=>$content_alg, alg=>$signing_alg, zip=>'deflate'
+                );
+
+say "mike's token $Mikestoken";
+say "Mikescompressedtoken  $Mikescompressedtoken     ";
+
+my $mikespayload = decode_jwt(token=>$Mikestoken, key=>$ericsKey);
+my $mikescompressedpayload = decode_jwt(token=>$Mikescompressedtoken, key=>$ericsKey);
+
+
+say "mikes payload  $mikespayload";
+say "mikes compressed payload $mikescompressedpayload";
+
+my $payload = decode_jwt(
+        token => "eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiemlwIjoiREVGIn0.-Qr8RoSaPUo93xvHa1cYqNoTDAIeOZiDMOMXz7Rf66vRDz0OOTwXcdx586TmeYVpIqRLreyCv8YrwvJ5LvSa6apnC5lcsLZY.fp-22qSCk21RaV3ost7gXw.GmED7RpqLuIRAbEhj1WvG7V8_CgOGzwO9g7JdaLMKLTqQ52R_YMLb3xiY47BX0jBgacP3oglPRTfFsfkGkSVow.dqEli5z-PpGTNgsoQYsL3aCSviHlQPTMnw5D8LMTwg4",
+        key => $ericsKey
+ );
+
+say "erics payload $payload";
