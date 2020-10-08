@@ -3,7 +3,7 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Jose\Component\Core\AlgorithmManager;
-use Jose\Component\Encryption\Algorithm\KeyEncryption\PBES2HS256A128KW;
+use Jose\Component\Encryption\Algorithm\KeyEncryption\PBES2HS512A256KW;
 use Jose\Component\Encryption\Algorithm\ContentEncryption\A256GCM;
 use Jose\Component\Encryption\Compression\CompressionMethodManager;
 use Jose\Component\Encryption\Compression\Deflate;
@@ -12,7 +12,7 @@ use Jose\Component\Encryption\JWEDecrypter;
 
 // The key encryption algorithm manager with the A256KW algorithm.
 $keyEncryptionAlgorithmManager = new AlgorithmManager([
-    new PBES2HS256A128KW(),
+    new PBES2HS512A256KW(),
 ]);
 
 // The content encryption algorithm manager with the A256CBC-HS256 algorithm.
@@ -52,7 +52,7 @@ $jwe = $jweBuilder
     ->create()              // We want to create a new JWE
     ->withPayload($payload) // We set the payload
     ->withSharedProtectedHeader([
-        'alg' => 'PBES2-HS256+A128KW',        // Key Encryption Algorithm
+        'alg' => 'PBES2-HS512+A256KW',        // Key Encryption Algorithm
         'enc' => 'A256GCM', // Content Encryption Algorithm
         'zip' => 'DEF'            // We enable the compression (irrelevant as the payload is small, just for the example).
     ])
