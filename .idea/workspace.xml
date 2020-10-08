@@ -22,6 +22,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -30,7 +31,7 @@
       <recent name="C:\Users\Henry\Desktop\JWE\Perl" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.PHP">
+  <component name="RunManager" selected="Docker.Perl">
     <configuration name="PHP" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -78,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602130391739</updated>
       <workItem from="1602130392941" duration="6446000" />
-      <workItem from="1602137337338" duration="3599000" />
+      <workItem from="1602137337338" duration="4318000" />
     </task>
     <servers />
   </component>

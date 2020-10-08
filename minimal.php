@@ -47,7 +47,6 @@ $payload = json_encode([
     'iss' => 'My service',
     'aud' => 'Your application',
 ]);
-print($success);
 
 $jwe = $jweBuilder
     ->create()              // We want to create a new JWE
@@ -65,9 +64,9 @@ $jwe = $jweBuilder
     $serializer = new CompactSerializer(); // The serializer
 
     $token = $serializer->serialize($jwe, 0); // We serialize the recipient at index 0 (we only have one recipient).
-    print($token);
+print($token);
 
-    $jweDecrypter = new JWEDecrypter(
+$jweDecrypter = new JWEDecrypter(
         $keyEncryptionAlgorithmManager,
         $contentEncryptionAlgorithmManager,
         $compressionMethodManager
@@ -75,4 +74,4 @@ $jwe = $jweBuilder
 	$jwe = $serializer->unserialize($token);
 	$success = $jweDecrypter->decryptUsingKey($jwe, $jwk, 0);
 
-    print($success);
+# print($success);

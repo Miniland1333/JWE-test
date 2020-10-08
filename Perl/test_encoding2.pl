@@ -4,13 +4,10 @@ use strict;
 
 my $ericsString = "My really secret payload that only Henry knows.";
 my $ericsKey = "secretkey";
-my $ericsToken = "eyJwMnMiOiJkYk9pVl9QLXoyS0hGWmJ1T1VQNzV5SWtTT0Q3aXZpYTlSWEY2czhJYzF2RDFiT2NQZDBRNkdBYXBUXzFWazNLaGotMUd1Z2NBbEpnSW9hX19HWWUtQSIsInAyYyI6NDA5NiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwiZW5jIjoiQTI1NkNCQy1IUzUxMiIsInppcCI6IkRFRiJ9.aq7vinK0ks0PhfEsYgDmFc0j7Eyi419RisAXW1_AqcTceQDKKUEm9Oljawef6Q4Yv6UWUl3bIoKEeKmyP9p_GXA0_lQYo_uo.1mQ2Rg2wAXx5hWmDy6auhg.BIeMrkoeiBJI2Dcmggm-__2iacJOFz4TDcPkn_5lDmRKtvSWrrvANa22dXtAVetjymQbHFC1NLbKSTf8-otolI9Y9xAzIHghSPncpo2cfDg.r7FufaIlZzUgzqyzADsR61V245VV0ZsrtxXKwBIOwkg1";
+my $ericsToken = "eyJwMnMiOiJqUDJycmlBSFpadnJmTm4xZGM5VFI3YkVCSWxvM2lmRElVNnFmQThTN2poTmtLSnZKUkpVQWZhbnZ5YWotM1VRaER6YS00c1ItLW9qT1paQkVLN0duQSIsInAyYyI6NDA5NiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwiZW5jIjoiQTI1NkNCQy1IUzUxMiIsInppcCI6IkRFRiJ9.i3qeeEairQi77EjVTeETnHvh230WkAUZIQw3DC09BUaSYLn0KoQdg2y6OGXyNIKeh4iWQeWBAz3iwtGU_cLVPjilNBT50GfD.IqUo8VFcV92LPCWeheSq1Q.NoG-6vExvqJanyMvsJHXy55SHQHAx4FDdYVyn99yKx6xhAYr74uvSETpRWzCoCXjC3rLNtuL_O2zkZj8vyr6PcCTXJxCR1e2iqjD0Q-eaXY.d1poC28FXWIi86c4GIpihKcVS7GIyMxQo7RNd86AO3w";
 
 
-my $payload = decode_jwt(
-    token => $ericsToken,
-    key   => $ericsKey,
-);
+my $payload = decode_jwt(token => $ericsToken, key => $ericsKey);
 
 say "erics payload $payload";
 while ( my($key, $value) = each $payload ) {

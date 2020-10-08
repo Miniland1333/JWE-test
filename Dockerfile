@@ -11,10 +11,17 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip
 
-COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
-RUN composer require web-token/jwt-core web-token/jwt-encryption php web-token/jwt-encryption-algorithm-aescbc web-token/jwt-encryption-algorithm-aesgcm web-token/jwt-encryption-algorithm-aeskw web-token/jwt-encryption-algorithm-pbes2 web-token/jwt-key-mgmt
+RUN composer require web-token/jwt-core
+RUN composer require web-token/jwt-encryption
+RUN composer require php
+RUN composer require web-token/jwt-encryption-algorithm-aescbc
+RUN composer require web-token/jwt-encryption-algorithm-aesgcm
+RUN composer require web-token/jwt-encryption-algorithm-aeskw
+RUN composer require web-token/jwt-encryption-algorithm-pbes2
+RUN composer require web-token/jwt-key-mgmt
 RUN composer dumpautoload
+COPY . /usr/src/myapp
 
 
 CMD [ "php", "./minimal.php" ]
